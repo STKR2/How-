@@ -239,7 +239,7 @@ stream_4 : "📡 **Started Streaming** 💡\n\n**🏷Title:** [{0}]({1})\n⌛️
 #General Buttons
 CLOSE_BUTTON  : "🗑 Close"
 CLOSEMENU_BUTTON  : "🗑 Close Menu"
-BACK_BUTTON : "⬅ Back"
+BACK_BUTTON : "‹ ارجع ›"
 UNBAN_BUTTON : "🗑 Unban Assistant"
 
 #Lyrics
@@ -256,12 +256,12 @@ S_B_7 : "‹ المنشئ ›"
 S_B_8 : "‹ الأوامر ›"
 
 #Help 
-H_B_1 : "Admin Commands"
-H_B_2 : "Play Commands"
-H_B_3 : "Bot Commands"
-H_B_4 : "Extra Commands"
-H_B_5 : "Close Menu"
-H_B_6 : "SudoUser Commands"
+H_B_1 : "‹ المدراء ›"
+H_B_2 : "‹ الأتصال ›"
+H_B_3 : ""
+H_B_4 : ""
+H_B_5 : "‹ امسح ›"
+H_B_6 : "‹ المنشئ ›"
 
 #PlayMode
 PM_B_1 : "DirectPlay"
@@ -276,8 +276,8 @@ P_B_4 : "🎵 Play Playlist"
 
 #Playlist
 PL_B_1 : "🚀 Play Playlist"
-PL_B_2 : "✚ Playlists"
-PL_B_3 : "✚ CPanel"
+PL_B_2 : ""
+PL_B_3 : ""
 PL_B_4 : "📡 Play Mode"
 PL_B_5 : "🔄 Del Whole Playlist"
 PL_B_6 : "↗️ Delete Playlist"
