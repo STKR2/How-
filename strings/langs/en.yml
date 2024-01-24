@@ -83,7 +83,7 @@ start_6 : "❗️ **Supergroup Needed** ❗️\n\nPlease convert your **group** 
 start_7 : "**Blacklisted Chat**\n\nYou're chat has been blacklisted by the Bot. Please ask any SudoUser to whitelist chat first. Check [Sudolist from here]({0})"
 
 # Help
-help_1 : "Click on the buttons below for more information. If you're facing any problem in command you can contact my bot owner or ask in support chat.\n\nAll commands can be used with: /"
+help_1 : "‹ قائمة تحكم الأزرار  ›\n \n ‹ التحكم الأساسي ›"
 help_2 : "Contact me in PM for help."
 
 # Settings
@@ -229,7 +229,7 @@ queue_4 : "⏳ Added to Queue at **#{0}\n\n💡Title:** {1}\n**⏱Duration:** {2
 queue_5 : "Only one track inside queue, Please add some more to check list"
 
 # All Streaming Lines
-stream_1 : "📡 **Started Streaming** 💡\n\n👤**Requested By:** {0}\n🔦**Information: **[Here]({1})"
+stream_1 : "‹ تم تشغيل الملف أونلاين  ›\n\n‹ الوقت :  {2} › \n\n‹ طلب الأخ : {3} ›"
 stream_2 : "📡 **Started Streaming via URL ** 💡\n\n👤**Requested By:** {0}"
 stream_3 : "📡 **Started Streaming** 💡\n\n**🏷Title:** {0}\n⌛️**Duration**: {1}\n👤**Requested By:** {2}"
 stream_4 : "📡 **Started Streaming** 💡\n\n**🏷Title:** [{0}]({1})\n⌛️**Duration**: {2}\n👤**Requested By:** {3}"
@@ -237,10 +237,10 @@ stream_4 : "📡 **Started Streaming** 💡\n\n**🏷Title:** [{0}]({1})\n⌛️
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "🗑 Close"
-CLOSEMENU_BUTTON  : "🗑 Close Menu"
+CLOSE_BUTTON  : "‹ تنظيف ›"
+CLOSEMENU_BUTTON  : "‹ تنظيف ›"
 BACK_BUTTON : "‹ ارجع ›"
-UNBAN_BUTTON : "🗑 Unban Assistant"
+UNBAN_BUTTON : "‹ رفع الحظر ›"
 
 #Lyrics
 L_B_1 : "🚀 Checkout Lyrics Now"
