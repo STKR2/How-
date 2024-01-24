@@ -225,7 +225,7 @@ song_11 : "Uploading Started\n\nUploading speed could be slow. Please hold on.."
 queue_1 : "Please Wait..Fetching Queue.."
 queue_2 : "Queued List is empty. No tracks found"
 queue_3 : "<u>**Queued Tracks:</u>**  [Checkout More Queued Tracks From Here]({0})"
-queue_4 : "⏳ Added to Queue at **#{0}\n\n💡Title:** {1}\n**⏱Duration:** {2}\n👤**Added By:** {3}"
+queue_4 : "‹ تم اضافة الملف الى قائمة الإنتضار المرقمة {0} ›"
 queue_5 : "Only one track inside queue, Please add some more to check list"
 
 # All Streaming Lines
