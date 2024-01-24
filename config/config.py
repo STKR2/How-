@@ -170,9 +170,8 @@ autoclean = []
 
 # Images
 START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/8041894fa11e8100a9d19.jpg"
-)
-
-PING_IMG_URL = getenv("PING_IMG_URL", "https://graph.org/file/8041894fa11e8100a9d19.jpg"
+                      )
+PING_IMG_URL = getenv("PING_IMG_URL", None
 
 )
 
@@ -186,9 +185,7 @@ GLOBAL_IMG_URL = getenv(
     "assets/Global.jpeg",
 )
 
-STATS_IMG_URL = getenv(
-    "STATS_IMG_URL",
-    "assets/Stats.jpeg",
+STATS_IMG_URL = getenv("STATS_IMG_URL", None
 )
 
 TELEGRAM_AUDIO_URL = getenv(
