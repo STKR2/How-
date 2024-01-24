@@ -67,10 +67,10 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", None
-)  # Example:- https://t.me/TheYukki
+)  # Example:- https://t.me/xl444
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", None
-)  # Example:- https://t.me/YukkiSupport
+)  # Example:- https://t.me/xl444
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
@@ -172,16 +172,16 @@ autoclean = []
 START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/8041894fa11e8100a9d19.jpg"
                        
 )
+PING_IMG_URL = getenv("PING_IMG_URL", "https://graph.org/file/8041894fa11e8100a9d19.jpg"
 
-PING_IMG_URL = getenv("PING_IMG_URL", None
-                     )                      
-PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", None
+)                      
+PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "https://graph.org/file/8041894fa11e8100a9d19.jpg"
 )
 
-GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", None
+GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "https://graph.org/file/8041894fa11e8100a9d19.jpg"
 )
 
-STATS_IMG_URL = getenv("STATS_IMG_URL", None
+STATS_IMG_URL = getenv("STATS_IMG_URL", "https://graph.org/file/8041894fa11e8100a9d19.jpg"
 )
 
 TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "https://graph.org/file/8041894fa11e8100a9d19.jpg"
