@@ -9,7 +9,7 @@
 #
 
 from .help import *
-from .play import *
+from .utils.inline.play *
 from .playlist import *
 from .queue import *
 from .settings import *
