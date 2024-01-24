@@ -170,37 +170,27 @@ autoclean = []
 
 # Images
 START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/8041894fa11e8100a9d19.jpg"
-                      )
+                       
+)
+
 PING_IMG_URL = getenv("PING_IMG_URL", None
-
+                     )                      
+PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", None
 )
 
-PLAYLIST_IMG_URL = getenv(
-    "PLAYLIST_IMG_URL",
-    "assets/Playlist.jpeg",
-)
-
-GLOBAL_IMG_URL = getenv(
-    "GLOBAL_IMG_URL",
-    "assets/Global.jpeg",
+GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", None
 )
 
 STATS_IMG_URL = getenv("STATS_IMG_URL", None
 )
 
-TELEGRAM_AUDIO_URL = getenv(
-    "TELEGRAM_AUDIO_URL",
-    "assets/Audio.jpeg",
+TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "https://graph.org/file/8041894fa11e8100a9d19.jpg"
 )
 
-TELEGRAM_VIDEO_URL = getenv(
-    "TELEGRAM_VIDEO_URL",
-    "assets/Video.jpeg",
+TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", "https://graph.org/file/8041894fa11e8100a9d19.jpg"
 )
 
-STREAM_IMG_URL = getenv(
-    "STREAM_IMG_URL",
-    "assets/Stream.jpeg",
+STREAM_IMG_URL = getenv("STREAM_IMG_URL","https://graph.org/file/8041894fa11e8100a9d19.jpg"
 )
 
 SOUNCLOUD_IMG_URL = getenv(
