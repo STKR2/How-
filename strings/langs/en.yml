@@ -205,21 +205,21 @@ lyrics_4 : "Click on the button below and get searched lyrics to avoid long spam
 
 #Ping
 ping_1 : "‹ البنك ›"
-ping_2 : "{6}`مللي ثانية ."
+ping_2 : "{0}` مللي ثانية ."
 
 
 # Song
-song_1 : "You can download Music or Video from YouTube only in private chat. Please start me in private chat."
-song_2 : "**Usage:**\n\n/song [Music Name] or [Youtube Link]"
-song_3 : "Live Link Detected. I am not able to download live youtube videos. "
-song_4 : "**🔗Title:**- {0}\n\nSelect the type in which you want to download."
-song_5 : "Not a valid Youtube Link"
-song_6 : "Getting Formats.. \n\nPlease Wait.."
-song_7 : "Failed to get available formats for the video. Please try any other track."
-song_8 : "Download Started\n\nDownloading speed could be slow. Please hold on.."
-song_9 : "Failed to download song from Youtube-DL\n\n**Reason:** {0}"
-song_10 : "Failed to upload on telegram from servers."
-song_11 : "Uploading Started\n\nUploading speed could be slow. Please hold on.."
+song_1 : ""
+song_2 : "‹ اكتب يوت وأسم الملف لتنزيلة ›"
+song_3 : ""
+song_4 : "‹ اختر جودة التنزيل ›"
+song_5 : "‹ الرابط غير صالح ›"
+song_6 : ""
+song_7 : ""
+song_8 : "‹ يتم الرفع ›"
+song_9 : ""
+song_10 : ""
+song_11 : ""
 
 # Tools - Queue
 queue_1 : ""
