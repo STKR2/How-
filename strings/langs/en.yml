@@ -3,7 +3,7 @@ name : 🏴󠁧󠁢󠁥󠁮󠁧󠁿 English
 # General Strings
 general_1 : "Reply to a user's message or give username/user_id."
 general_2 : "Error! Wrong Usage of Command."
-general_3 : "‹ تم تشغيل الملف الصوتي بنجاح ›\n\n‹ تم ذالك بواسطة مساعد الملف الصوتي ›"
+general_3 : "‹ تم تشغيل الملف الصوتي بنجاح ›"
 general_4 : "You're an anonymous admin in this chat group!\nRevert back to User Account From Admin Rights."
 general_5 : "You need to be admin with manage voice chat rights to perform this action."
 general_6 : "Bot isn't streaming on voice chat."
@@ -87,7 +87,7 @@ help_1 : "‹ قائمة تحكم الأزرار  ›\n \n ‹ التحكم ال
 help_2 : "Contact me in PM for help."
 
 # Settings
-setting_1 : "⚙️ **Music Bot Settings**\n\n🖇**Group:** {0}\n🔖**Group ID:** `{1}`\n\n💡**Choose the function buttons from below which you want to edit or change.**"
+setting_1 : ""
 setting_3 : "⁉️ What is This?\n\n1) Direct: Plays search queries directly. Use -v to play videos in direct mode.\n\n2) Inline: Returns Inline Markup Buttons for choosing between video & audio."
 setting_4 : "⁉️ What is This?\n\n👥 Everyone: Anyone can use admin commands(skip, pause, resume etc) present in this group.\n\n🙍 Admin Only: Only admins and authorized users can use admin commands."
 setting_5 : "No Authorized Users Found\n\nYou can allow any non-admin to use my admin commands by /auth and delete by using /unauth"
@@ -142,7 +142,7 @@ cplay_5 : "Only Channels are supported."
 cplay_6 : "You need to be the **Owner** of the channel[{0}] to connect it with this group.\n**Channel's Owner:** @{1}\n\nAlternatively you can link your group to that channel and then try connnecting with `/channelplay linked`"
 
 #Play
-play_1 : "🔄 Processing Query... Please Wait!"
+play_1 : "‹ يتم التشغيل ›"
 play_2 : "**🏷Channel Play Mode**\n\n🔄 Processing Query... Please Wait!\n**Linked Channel:** {0}"
 play_3 : "Failed to Process Query!"
 play_4 : "🖇 **Admins Only Play**\nOnly Admins and Auth Users can play music in this group.\n\nChange mode via /playmode and if you're already admin, reload admincache via /admincache"
@@ -204,8 +204,8 @@ lyrics_3 : "❌ Failed to fetch lyrics😭.\n\n💡**Tried Searching For:** {0}"
 lyrics_4 : "Click on the button below and get searched lyrics to avoid long spam types lyrics search."
 
 #Ping
-ping_1 : "Pong!!!!"
-ping_2 : "{0} is working good with a ping of `{1}` ms.\n\nBot's uptime is {2} and has used a total of {3} server's storage. Cpu load is about {4} with a consumption of {5} Ram. Py-Tgcalls client is also having a good ping of `{6}` ms."
+ping_1 : "‹ البنك ›"
+ping_2 : "{6}`مللي ثانية ."
 
 
 # Song
@@ -222,11 +222,11 @@ song_10 : "Failed to upload on telegram from servers."
 song_11 : "Uploading Started\n\nUploading speed could be slow. Please hold on.."
 
 # Tools - Queue
-queue_1 : "Please Wait..Fetching Queue.."
-queue_2 : "Queued List is empty. No tracks found"
-queue_3 : "<u>**Queued Tracks:</u>**  [Checkout More Queued Tracks From Here]({0})"
+queue_1 : ""
+queue_2 : ""
+queue_3 : ""
 queue_4 : "‹ تم اضافة الملف الى قائمة الإنتضار المرقمة {0} ›"
-queue_5 : "Only one track inside queue, Please add some more to check list"
+queue_5 : ""
 
 # All Streaming Lines
 stream_1 : "‹ تم تشغيل الملف أونلاين  ›\n\n‹ الوقت :  {2} › \n\n‹ طلب الأخ : {3} ›"
@@ -243,7 +243,7 @@ BACK_BUTTON : "‹ ارجع ›"
 UNBAN_BUTTON : "‹ رفع الحظر ›"
 
 #Lyrics
-L_B_1 : "🚀 Checkout Lyrics Now"
+L_B_1 : ""
 
 # Start
 S_B_1 : ""
@@ -269,10 +269,10 @@ PM_B_2 : "InlineMarkup"
 PM_B_3 : "ChannelPlay"
 
 #Play
-P_B_1 : "🎵 Play Audio"
-P_B_2 : "🎥 Play Video"
-P_B_3 : "🏮 Start Live Stream"
-P_B_4 : "🎵 Play Playlist"
+P_B_1 : "‹ صوت فقط ›"
+P_B_2 : ""
+P_B_3 : "‹ بث مباشر ›"
+P_B_4 : ""
 
 #Playlist
 PL_B_1 : ""
@@ -318,8 +318,8 @@ ST_B_27 : ""
 
 #Song
 SG_B_1 : "‹ التنزيل داخل البوت فقط ›"
-SG_B_2 : "🔊 Audio"
-SG_B_3 : "🎥 Video"
+SG_B_2 : "‹ صوت ›"
+SG_B_3 : ""
 
 #Stats
 SA_B_1 : ""
@@ -332,8 +332,8 @@ SA_B_7 : ""
 SA_B_8 : ""
 
 #Queue
-QU_B_1 : "📑 Queued List"
-QU_B_2 : "Played {0} out of {1} Mins"
+QU_B_1 : ""
+QU_B_2 : ""
 
 # Sudo Users [ If you are translating this to some other language .. you can leave all these strings in english language]
 
@@ -347,99 +347,98 @@ sudo_6 : "\n⭐️<u> **Sudo Users:**</u>\n"
 sudo_7 : "No Sudo Users"
 
 #Block
-block_1 : "{0} is already blocked from the bot."
-block_2 : "Added **{0}** to Block List of bot. User won't be able to use bot now under any condition.\n\nCheck blocked users: /blockedusers"
-block_3 : "User is already free and not blocked."
-block_4 : "Removed User from the block list. User will be able to use bot now."
-block_5 : "No Blocked Users Found"
-block_6 : "Getting Blocked Users List.. Please Wait"
-block_7 : "**Blocked Users:**\n\n"
+block_1 : ""
+block_2 : ""
+block_3 : ""
+block_5 : ""
+block_6 : ""
+block_7 : ""
 
 #Blacklist Chats
-black_1 : "**Usage:**\n/blacklistchat [CHAT_ID]"
-black_2 : "Chat is already blacklisted."
-black_3 : "Chat has been successfully blacklisted"
-black_4 : "**Usage:**\n/whitelistchat [CHAT_ID]"
-black_5 : "Chat is already whitelisted."
-black_6 : "Chat has been successfully whitelisted"
-black_7 : "**Blacklisted Chats:**\n\n"
-black_8 : "No Blacklisted Chats"
+black_1 : ""
+black_2 : ""
+black_3 : ""
+black_4 : ""
+black_5 : ""
+black_6 : ""
+black_7 : ""
+black_8 : ""
 
 #videolimit
-vid_1 : "**Usage:**\n/set_video_limit [Number of chats allowed] or [Disable]"
-vid_2 : "Please Use Numeric Numbers for Setting Limit."
-vid_3 : "Video Calls Maximum Limit Defined to {0} Chats."
-vid_4 : "Video Calls Disabled"
+vid_1 : ""
+vid_2 : ""
+vid_3 : ""
+vid_4 : ""
 
 #maintenance
-maint_1 : "**Usage:**\n/maintenance [enable|disable]"
-maint_2 : "Enabled for Maintenance"
-maint_3 : "Maintenance Mode Disabled"
+maint_1 : ""
+maint_2 : ""
+maint_3 : ""
 
 #log
-log_1 : "**Usage:**\n/logger [enable|disable]"
-log_2 : "Enabled Logging"
-log_3 : "Logging Disabled"
+log_1 : ""
+log_2 : ""
+log_3 : ""
 
 #videomode
-vidmode_1 : "**Usage:**\n/videomode [download|m3u8]"
-vidmode_2 : "Video Play Mode set as downloader. Bot will be downloading tracks now."
-vidmode_3 : "Video Play Mode set as m3u8. Bot will be play tracks live now."
+vidmode_1 : ""
+vidmode_2 : ""
+vidmode_3 : ""
 
 #broadcast
-broad_1 : "**Broadcasted Message In {0}  Chats with {1} Pins from Bot.**"
-broad_2 : "Started Assistant Broadcast..."
-broad_3 : "**Assistant Broadcast:**\n\n"
-broad_4 : "Assistant {0} Broadcasted in {1} chats\n"
-broad_5 : "**Usage**:\n/broadcast [MESSAGE] or [Reply to a Message]"
-broad_6 : "Please provide some text to broadcast."
-broad_7 : "**Broadcasted Message to {0} Users.**"
+broad_1 : ""
+broad_2 : ""
+broad_3 : ""
+broad_4 : ""
+broad_5 : ""
+broad_6 : ""
+broad_7 : ""
 
 #Heroku
-heroku_1 : "Please make sure your Heroku API Key, Your App name are configured correctly in the heroku"
-heroku_2 : "You can only get logs of Heroku Apps"
-heroku_3 : "**Usage:**\n/get_var [Var Name]"
-heroku_4 : "Unable to find any such var."
-heroku_5 : ".env file not found."
-heroku_6 : "**Usage:**\n/del_var [Var Name]"
-heroku_7 : "{0} Deleted."
-heroku_8 : "**Usage:**\n/set_var [Var Name] [Var Value]"
-heroku_9 : "{0} has been updated successfully"
-heroku_10 : "{0} has been added successfully"
-heroku_11 : "Only for Heroku Apps"
-heroku_12 : "Checking Heroku Usage. Please Wait"
-heroku_13 : "Checking for available updates..."
-heroku_14 : "Git Command Error"
-heroku_15 : "Invalid Git Repsitory"
+heroku_1 : ""
+heroku_2 : ""
+heroku_3 : ""
+heroku_4 : ""
+heroku_5 : ""
+heroku_6 : ""
+heroku_7 : ""
+heroku_8 : ""
+heroku_9 : ""
+heroku_10 : ""
+heroku_11 : ""
+heroku_12 : ""
+heroku_13 : ""
+heroku_14 : ""
+heroku_15 : ""
 
 #Private bot mode
-pbot_1 : "**Usage:**\n/authorize [CHAT_ID]"
-pbot_2 :  "**Usage:**\n/unauthorize [CHAT_ID]"
-pbot_3 : "Added given chat to authorized list"
-pbot_4 : "Removed given chat from authorized list"
-pbot_5 : "Chat is already in the authorized list"
-pbot_6 : "No such chat exists in the authorized list"
-pbot_7 : "Failed to verify chat_id.\n\nMake sure its numeric and in correct format. Don't use chat username or links."
-pbot_8 : "Please wait.... Fetching Authorized chats."
-pbot_9 : "**<b>Fetched Chats:</b>**\n\n"
-pbot_10 : "Private Chat"
-pbot_11 : "No Authorized chats found"
-pbot_12 : "Private Bot Mode is disabled.\n\nTo use your bot as private bot make sure to set **PRIVATE_BOT_MODE** = **True**"
-pbot_13 : "\n**<b>Unfetched Chats:</b>**\n\n"
+pbot_1 : ""
+pbot_2 : ""
+pbot_3 : ""
+pbot_4 : ""
+pbot_5 : ""
+pbot_6 : ""
+pbot_7 : ""
+pbot_8 : ""
+pbot_9 : ""
+pbot_10 : ""
+pbot_11 : ""
+pbot_12 : ""
+pbot_13 : ""
 
 
 #Gbanned
-gban_1 : "You want to gban yourself? How Fool!"
-gban_2 : "Should i block myself? Lol"
-gban_3 : "You want to block a sudo user?"
-gban_4 : "{0} is already **gbanned** from the bot."
-gban_5 : "**Initializing Global Ban on {0}**\n\nExpected Time : {1}."
-gban_6 : "**Gbanned Successfully**\n\nBanned **{0}** from **{1}** chats."
-gban_7 : "{0} is not **gbanned **yet from the bot."
-gban_8 : "**Ungbanning {0}**\n\nExpected Time : {1}."
-gban_9 : "**UnGbanned Successfully**\n\nUnbanned **{0}** in **{1}** chats."
-gban_10 : "No Gbanned Users Found."
-gban_11 : "Please wait a while.. Fetching Gbanned users list"
+gban_1 : ""
+gban_2 : ""
+gban_3 : ""
+gban_4 : ""
+gban_5 : ""
+gban_6 : ""
+gban_7 : ""
+gban_8 : ""
+gban_9 : ""
+gban_10 : ""
+gban_11 : ""
 
 #Suggestions
 sug_0 : ""
