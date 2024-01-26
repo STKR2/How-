@@ -239,7 +239,7 @@ stream_4 : "📡 **Started Streaming** 💡\n\n**🏷Title:** [{0}]({1})\n⌛️
 #General Buttons
 CLOSE_BUTTON  : "‹ تنظيف ›"
 CLOSEMENU_BUTTON  : "‹ تنظيف ›"
-BACK_BUTTON : "‹ ارجع ›"
+BACK_BUTTON : ""
 UNBAN_BUTTON : "‹ رفع الحظر ›"
 
 #Lyrics
