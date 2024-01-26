@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2023-2024 by YukkiOwner@Github, < https://github.com/YukkiOwner >.
-#
-# This file is part of < https://github.com/YukkiOwner/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/YukkiOwner/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-
 import socket
 import time
 
@@ -15,7 +5,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from YukkiMusic.core.mongo import pymongodb
+from YukkiMusic.core.mongo import mongodb
 
 from .logging import LOGGER
 
@@ -42,38 +32,32 @@ XCB = [
     "https",
     str(config.HEROKU_APP_NAME),
     "HEAD",
-    "main",
+    "master",
 ]
 
 
 def dbb():
     global db
     db = {}
-    LOGGER(__name__).info(f"Database Initialized.")
+    LOGGER(__name__).info(f"Local Database Initialized.")
 
 
-def sudo():
+async def sudo():
     global SUDOERS
-    OWNER = config.OWNER_ID
-    if config.MONGO_DB_URI is None:
-        for user_id in OWNER:
+    SUDOERS.add(config.OWNER_ID)
+    sudoersdb = mongodb.sudoers
+    sudoers = await sudoersdb.find_one({"sudo": "sudo"})
+    sudoers = [] if not sudoers else sudoers["sudoers"]
+    if config.OWNER_ID not in sudoers:
+        sudoers.append(config.OWNER_ID)
+        await sudoersdb.update_one(
+            {"sudo": "sudo"},
+            {"$set": {"sudoers": sudoers}},
+            upsert=True,
+        )
+    if sudoers:
+        for user_id in sudoers:
             SUDOERS.add(user_id)
-    else:
-        sudoersdb = pymongodb.sudoers
-        sudoers = sudoersdb.find_one({"sudo": "sudo"})
-        sudoers = [] if not sudoers else sudoers["sudoers"]
-        for user_id in OWNER:
-            SUDOERS.add(user_id)
-            if user_id not in sudoers:
-                sudoers.append(user_id)
-                sudoersdb.update_one(
-                    {"sudo": "sudo"},
-                    {"$set": {"sudoers": sudoers}},
-                    upsert=True,
-                )
-        if sudoers:
-            for x in sudoers:
-                SUDOERS.add(x)
     LOGGER(__name__).info(f"Sudoers Loaded.")
 
 
