@@ -11,8 +11,9 @@
 import asyncio
 from datetime import datetime, timedelta
 from typing import Union
-
+from strings.filters import command
 from pyrogram import Client
+
 from pyrogram.errors import (ChatAdminRequired,
                              UserAlreadyParticipant,
                              UserNotParticipant)
