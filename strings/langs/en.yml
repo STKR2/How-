@@ -43,7 +43,7 @@ admin_5 : "‹ بالفعل تم كتم الحساب ›"
 admin_6 : "‹ تم كتم الحساب ›"
 admin_7 : "‹ بالفعل تم إلغاء الكتم ›"
 admin_8 : "‹ تم إلغاء الكتم ›"
-admin_9 : "‹ تم الإيقاف ›"
+admin_9 : "‹ تم إيقاف التشغيل نهائياً ›"
 admin_10 : "‹ لايوجد شي في قائمة التشغيل ، تم عمل سكب تلقائيا ›"
 admin_11 : "Error while changing stream to **{0}**\n\nPlease use /skip again."
 admin_12 : "Unable to skip to a specific track because of enabled loop play. Please disable loop play via `/loop disable` to use this feature."
@@ -141,7 +141,7 @@ cplay_5 : "Only Channels are supported."
 cplay_6 : "You need to be the **Owner** of the channel[{0}] to connect it with this group.\n**Channel's Owner:** @{1}\n\nAlternatively you can link your group to that channel and then try connnecting with `/channelplay linked`"
 
 #Play
-play_1 : "‹ يتم التشغيل ›"
+play_1 : "‹ يتم الأن ›"
 play_2 : "**🏷Channel Play Mode**\n\n🔄 Processing Query... Please Wait!\n**Linked Channel:** {0}"
 play_3 : "Failed to Process Query!"
 play_4 : "🖇 **Admins Only Play**\nOnly Admins and Auth Users can play music in this group.\n\nChange mode via /playmode and if you're already admin, reload admincache via /admincache"
@@ -162,7 +162,7 @@ play_18 : "**No Active Voice Chat Found**\n\nTo use force play, there must be an
 
 
 #Playlist
-playlist_1 : "‹ ارسل كلمة الاوامر لمعرفة كيفية تشغيل البوت›"
+playlist_1 : "‹ ارسل كلمة شغل بالرد على ملف صوتي او رابط يوتيوب ›"
 playlist_2 : "Getting your playlist. Please wait"
 playlist_3 : "You have no playlist on Bot's Server."
 playlist_4 : "Fetched Playlist:\n\n"
