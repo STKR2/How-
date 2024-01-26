@@ -496,11 +496,11 @@ async def get_audio_bitrate(chat_id: int) -> str:
     mode = audio.get(chat_id)
     if not mode:
         return MediumQualityAudio()
-    if str(mode) == "High":
+    if str(mode) == "- عالية .":
         return HighQualityAudio()
-    elif str(mode) == "Medium":
+    elif str(mode) == "- وسط .":
         return MediumQualityAudio()
-    elif str(mode) == "Low":
+    elif str(mode) == "- زفت .":
         return LowQualityAudio()
 
 
@@ -511,9 +511,9 @@ async def get_video_bitrate(chat_id: int) -> str:
             return HighQualityVideo()
         else:
             return MediumQualityVideo()
-    if str(mode) == "High":
+    if str(mode) == "- عالية .":
         return HighQualityVideo()
-    elif str(mode) == "Medium":
+    elif str(mode) == "- وسط .":
         return MediumQualityVideo()
-    elif str(mode) == "Low":
+    elif str(mode) == "- زفت .":
         return LowQualityVideo()
