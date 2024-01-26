@@ -1,4 +1,4 @@
-from YukkiMusic.core.bot import Anony
+from YukkiMusic.core.bot import YukkiBot
 from YukkiMusic.core.dir import dirr
 from YukkiMusic.core.git import git
 from YukkiMusic.core.userbot import Userbot
@@ -11,7 +11,7 @@ git()
 dbb()
 heroku()
 
-app = Anony()
+app = YukkiBot()
 userbot = Userbot()
 
 
