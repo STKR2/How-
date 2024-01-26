@@ -13,6 +13,7 @@ import re
 
 import yt_dlp
 from pykeyboard import InlineKeyboard
+from strings.filters import command
 from pyrogram import enums, filters
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, InputMediaAudio,
@@ -31,7 +32,7 @@ SONG_COMMAND = get_command("SONG_COMMAND")
 
 
 @app.on_message(
-    filters.command(SONG_COMMAND)
+    command(SONG_COMMAND)
     & filters.group
     & ~BANNED_USERS
 )
@@ -167,7 +168,7 @@ async def song_helper_cb(client, CallbackQuery, _):
                 fom = x["format_id"]
                 keyboard.row(
                     InlineKeyboardButton(
-                        text=f"{form} Quality Audio = {sz}",
+                        text=f"{form} الدقة = {sz}",
                         callback_data=f"song_download {stype}|{fom}|{vidid}",
                     ),
                 )
@@ -232,7 +233,7 @@ async def song_helper_cb(client, CallbackQuery, _):
 @languageCB
 async def song_download_cb(client, CallbackQuery, _):
     try:
-        await CallbackQuery.answer("Downloading")
+        await CallbackQuery.answer("- يتم التحميل .")
     except:
         pass
     callback_data = CallbackQuery.data.strip()
