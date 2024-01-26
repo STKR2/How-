@@ -1,8 +1,8 @@
 name : 🏴󠁧󠁢󠁥󠁮󠁧󠁿 English
 
 # General Strings
-general_1 : ""
-general_2 : ""
+general_1 : "‹ الرد على يوزر المستخدم او الأيدي ›"
+general_2 : "‹ أستخدامك للأمر خطا ›"
 general_3 : "- حدث خطأ غير معروف \n\n- نوع الخطأ : {0}"
 general_4 : "‹ انت مستخدم مجهول ›"
 general_5 : "‹ يلزم صلاحيات الدردشة الصوتية والحذف ، حتى تستطيع استخدام الأمر ›"
@@ -14,17 +14,17 @@ tg_2 : ""
 
 # Core - Call.py
 
-call_1 : "Bot requires **Admin** Permission to invite assistant account to your channel."
-call_2 : "Assistant is banned in your group or channel, please unban.\n\n**Assistant Username:** @{0}\n**Assistant ID:** {1}"
-call_3 : "Exception Occured While Inviting Assistant Account to your chat.\n\n**Reason**: {0}"
-call_4 : "Bot requires **Invite Users Via Link** Permission to invite assistant account to your chat group."
-call_5 : "‹ يتم التشغيل الأن ›"
-call_6 : "‹ يتم التشغيل الأن ›"
-call_7 : "**Harmful Admin Right Given **\n\nPlease remove **BAN USERS** rights from the bot."
-call_8 : "**Harmful Admin Right Given **\n\nPlease remove **ADD NEW ADMINS** rights from the bot."
-call_9 : "**Failed to switch Stream**\nPlease use /skip to change track again."
-call_10 : "Downloading Next Track from Playlist"
-call_11 : "Please add @{0} to your channel[ ID: {1}].\n\nBot is not able to get channel details."
+call_1 : "‹ انطي صلاحية اضافة المستخدمين للبوت  ›"
+call_2 : "‹ حساب المساعد محظور يرجى رفع الحظر عن الحساب @{0} ›"
+call_3 : "‹ حدث خطأ اثناء دعوة المساعد والسبب {0} ›"
+call_4 : "‹ انطي صلاحية اضافة مستخدمين للبوت اولا ›"
+call_5 : "‹ تم ارسال دعوة لحساب المساعد للإنضمام هنا ›"
+call_6 : "‹ تم الأنضمام ، تم التشغيل بنجاح ›"
+call_7 : "‹ وخر صلاحية حظر المستخدمين من البوت ›"
+call_8 : "‹ وخر صلاحية إضافة مشرفين من البوت ›"
+call_9 : "‹ اعتقد هنالك مشكلة ، استخدم امر سكب الأمر البديل ›"
+call_10 : "‹ بدء تشغيل الملفات المتبقية في الطابور ›"
+call_11 : "‹ عليك إضافة @{0} الى قناتك ، لأن البوت ماجاي يكدر يضيفة وعيونك ›"
 
 #
 auth_1 : ""
@@ -47,18 +47,18 @@ admin_7 : "‹ بالفعل تم إلغاء الكتم ›"
 admin_8 : "‹ تم إلغاء الكتم ›"
 admin_9 : "‹ تم إيقاف التشغيل نهائياً ›"
 admin_10 : "‹ لايوجد شي في قائمة التشغيل ، تم عمل سكب تلقائيا ›"
-admin_11 : "Error while changing stream to **{0}**\n\nPlease use /skip again."
-admin_12 : "Unable to skip to a specific track because of enabled loop play. Please disable loop play via `/loop disable` to use this feature."
-admin_13 : "Please use numeric numbers for specific tracks, like 1, 2 or 4 etc"
-admin_14 : "Atleast 2 tracks needed in queue to skip to a specific number. Check queue by /queue"
-admin_15 : "Not enough tracks in queue for the value given by you. Please choose numbers between 1 and {0}"
-admin_16 : "Failed to skip to specific track.\n\nCheck left queue by /queue"
-admin_17 : "{0}.. Please Wait"
+admin_11 : "‹ اعتقد هنالك مشكلة في {0} ، استخدم امر سكب الأمر البديل ›"
+admin_12 : "‹ البوت لايستطيع التخطي بسرعة الى مسار معين بسبب التشغيل المتكرر ›"
+admin_13 : "‹ استخدم ارقام محددة للتخطي مثلا 1 او 2 ›"
+admin_14 : "‹ مطلوب مسارين اقل شي في الطابور حتى تكدر تنتقل من رقم إلى رقم محدد ›"
+admin_15 : "‹ اعتقد هنالك مشكلة في {0} ، استخدم امر سكب الأمر البديل ›"
+admin_16 : "‹ فشل التخطي إلى المسار المحدد ›"
+admin_17 : "‹ انتظر {0} ›"
 admin_18 : "‹ للتأكد اكثر من انك مشرف اكتب تحديث ›"
 admin_19 : "‹ للتأكد اكثر من انك مشرف اكتب تحديث بعدها تستطيع استخدام الاوامر › "
-admin_20 : "‹ تم التحديث ›."
-admin_21 : "Nothing inside queue to shuffle"
-admin_22 : "Failed to shuffle.\n\nCheck queue : /queue"
+admin_20 : "‹ تم التحديث ›"
+admin_21 : "‹ ماكو شي مشتغل ›"
+admin_22 : "‹ فشل الأختيار التلقائي ›"
 admin_23 : "**Queue Shuffled by {0}**\n\nCheck shuffled queue : /queue"
 admin_24 : "**Usage:**\n/loop [enable/disable] or [Number between 1-10]\n\n**Example:** /loop 5"
 admin_25 : "Loop enabled by {0} for **{1}** times. Bot will now repeat the current playing music on voice chat for **{1}** times"
