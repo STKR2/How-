@@ -1,6 +1,6 @@
 {
-    "name": "تشغيل الملفات الصوتية اخر تحديث ",
-    "description": "!!هذا الأصدار محدث",
+    "name": "بوت تشغيل الملفات الصوتية في القنوات والمجموعات  ",
+    "description": "هذا السورس محدث احدث إصدار لسنة 2024",
     "logo": "https://graph.org/file/8041894fa11e8100a9d19.jpg",
     "keywords": [
     "python3",
@@ -57,7 +57,7 @@
       "LOG_GROUP_ID": {
         "description": "- اكتب ايدي المجموعة يجب ان يبدء ب -100 .",
         "value": "",
-        "required": true
+        "required": false
       },
       "UPSTREAM_REPO": {
         "description": "- لاتغيرها ابدا .",
