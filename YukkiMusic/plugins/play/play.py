@@ -14,6 +14,7 @@ import string
 from ast import ExceptHandler
 
 from pyrogram import filters
+from strings.filters import command
 from pyrogram.types import (InlineKeyboardMarkup, InputMediaPhoto,
                             Message)
 from pytgcalls.exceptions import NoActiveGroupCall
@@ -42,7 +43,7 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 
 @app.on_message(
-    filters.command(PLAY_COMMAND)
+    command(PLAY_COMMAND)
     & filters.group
     & ~BANNED_USERS
 )
