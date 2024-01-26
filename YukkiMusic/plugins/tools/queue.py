@@ -19,6 +19,7 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
+from strings.filters import command
 from YukkiMusic import app
 from YukkiMusic.misc import db
 from YukkiMusic.utils import (Yukkibin, get_channeplayCB,
@@ -53,7 +54,7 @@ def get_duration(playing):
 
 
 @app.on_message(
-    filters.command(QUEUE_COMMAND) & filters.group & ~BANNED_USERS
+    command(QUEUE_COMMAND) & filters.group & ~BANNED_USERS
 )
 @language
 async def ping_com(client, message: Message, _):
