@@ -8,6 +8,7 @@ from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL, adminlist)
 from YukkiMusic import YouTube, app
 from YukkiMusic.core.call import Yukki
+from strings.filters import command
 from YukkiMusic.misc import SUDOERS, db
 from YukkiMusic.utils.database import (is_active_chat,
                                        is_music_playing, is_muted,
