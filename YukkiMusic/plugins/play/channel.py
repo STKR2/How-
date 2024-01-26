@@ -13,6 +13,7 @@ from pyrogram.enums import ChatMembersFilter, ChatMemberStatus, ChatType
 from pyrogram.types import Message
 
 from config import BANNED_USERS
+from strings.filters import command
 from strings import get_command
 from YukkiMusic import app
 from YukkiMusic.utils.database import set_cmode
@@ -23,7 +24,7 @@ CHANNELPLAY_COMMAND = get_command("CHANNELPLAY_COMMAND")
 
 
 @app.on_message(
-    filters.command(CHANNELPLAY_COMMAND)
+    command(CHANNELPLAY_COMMAND)
     & filters.group
     & ~BANNED_USERS
 )
