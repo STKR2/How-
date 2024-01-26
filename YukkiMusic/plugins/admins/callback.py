@@ -8,7 +8,6 @@ from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL, adminlist)
 from YukkiMusic import YouTube, app
 from YukkiMusic.core.call import Yukki
-from strings.filters import command
 from YukkiMusic.misc import SUDOERS, db
 from YukkiMusic.utils.database import (is_active_chat,
                                        is_music_playing, is_muted,
@@ -28,7 +27,7 @@ from YukkiMusic.utils.thumbnails import gen_thumb
 wrong = {}
 
 
-@app.on_callback_query(regex("PanelMarkup") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("PanelMarkup") & ~BANNED_USERS)
 @languageCB
 async def markup_panel(client, CallbackQuery: CallbackQuery, _):
     await CallbackQuery.answer()
@@ -71,7 +70,7 @@ async def del_back_playlist(client, CallbackQuery, _):
     wrong[chat_id][CallbackQuery.message.message_id] = True
 
 
-@app.on_callback_query(regex("Pages") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("Pages") & ~BANNED_USERS)
 @languageCB
 async def del_back_playlist(client, CallbackQuery, _):
     await CallbackQuery.answer()
@@ -106,7 +105,7 @@ downvote = {}
 downvoters = {}
 
 
-@app.on_callback_query(regex("ADMIN") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("ADMIN") & ~BANNED_USERS)
 @languageCB
 async def del_back_playlist(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
@@ -442,4 +441,4 @@ async def del_back_playlist(client, CallbackQuery, _):
         string = _["admin_33"].format(seconds_to_min(to_seek))
         await mystic.edit_text(
             f"{string}\n\nChanges done by: {mention}"
-        )
+              )
