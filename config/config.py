@@ -57,10 +57,10 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", None
-)  # Example:- https://t.me/TheYukki
+)  # Example:- https://t.me/xl444
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", None
-)  # Example:- https://t.me/YukkiSupport
+)  # Example:- https://t.me/xl444
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
@@ -126,7 +126,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 # If you want your bot to setup the commands automatically in the bot's menu set it to true.
 # Refer to https://i.postimg.cc/Bbg3LQTG/image.png
-SET_CMDS = getenv("SET_CMDS", False)
+SET_CMDS = getenv("SET_CMDS", true)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 STRING1 = getenv("STRING_SESSION", "AgDAbDw942Het3ZaYMyPWD0jDiZNdGAo3mEtbJI2zAyacaXGdH4ybeZopuj4nJuKv0ECRu6HPrHgesKyAfUyQTK6Na0PkFPz_6PJMrdHBvgnkdd4o_iI4jbAWJ8MJcerrCDJZvIl6oKWFOL5WVx-6ioe_yYSA9pzSGNVWizTd12BfMCGrrySvEF4QddxRD-t9iU_YaQt8d0w1DWJTub99ZY7hMcUBxqP3Vmaknrm-Wu3NgvF0r-7lIz0M_0_bsvFWDarcicYSgXawnNqzQs9-JQ6qIsZ4UyCinP2hO0hYrVsDoPX8n40wlvuAHU-anJGXcQqwcSZ4L87AKgIwv_160oAAAAAAZ3dIT0A")
