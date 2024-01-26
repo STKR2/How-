@@ -12,6 +12,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS
+from strings.filters import command
 from strings import get_command
 from YukkiMusic import app
 from YukkiMusic.core.call import Yukki
@@ -23,7 +24,7 @@ RESUME_COMMAND = get_command("RESUME_COMMAND")
 
 
 @app.on_message(
-    filters.command(RESUME_COMMAND)
+    command(RESUME_COMMAND)
     & filters.group
     & ~BANNED_USERS
 )
