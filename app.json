@@ -57,7 +57,7 @@
       "LOG_GROUP_ID": {
         "description": "- اكتب ايدي المجموعة يجب ان يبدء ب -100 .",
         "value": "",
-        "required": false
+        "required": true
       },
       "UPSTREAM_REPO": {
         "description": "- لاتغيرها ابدا .",
