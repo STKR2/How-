@@ -17,6 +17,7 @@ from pyrogram.types import CallbackQuery, Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
+from strings.filters import command
 from YukkiMusic import app
 from YukkiMusic.core.call import Yukki
 from YukkiMusic.misc import db
@@ -31,7 +32,7 @@ RESTART_COMMAND = get_command("RESTART_COMMAND")
 
 
 @app.on_message(
-    filters.command(RELOAD_COMMAND)
+    command(RELOAD_COMMAND)
     & filters.group
     & ~BANNED_USERS
 )
@@ -62,7 +63,7 @@ async def reload_admin_cache(client, message: Message, _):
 
 
 @app.on_message(
-    filters.command(RESTART_COMMAND)
+    command(RESTART_COMMAND)
     & filters.group
     & ~BANNED_USERS
 )
@@ -89,7 +90,7 @@ async def restartbot(client, message: Message, _):
         except:
             pass
     return await mystic.edit_text(
-        "Successfully restarted. Try playing now.."
+        "- يتم التشغيل ."
     )
 
 
@@ -142,7 +143,7 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
             )
         except:
             return await CallbackQuery.answer(
-                "Failed to stop the Downloading.", show_alert=True
+                "- فشل التحميل .", show_alert=True
             )
     await CallbackQuery.answer(
         "Failed to recognize the running task", show_alert=True
