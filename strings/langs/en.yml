@@ -3,7 +3,7 @@ name : 🏴󠁧󠁢󠁥󠁮󠁧󠁿 English
 # General Strings
 general_1 : ""
 general_2 : ""
-general_3 : ""
+general_3 : "- حدث خطأ غير معروف \n\n- نوع الخطأ : {0}"
 general_4 : "‹ انت مستخدم مجهول ›"
 general_5 : "‹ يلزم صلاحيات الدردشة الصوتية والحذف ، حتى تستطيع استخدام الأمر ›"
 general_6 : "‹ لايوجد شي في الاتصال ›"
@@ -13,6 +13,7 @@ tg_1 : ""
 tg_2 : ""
 
 # Core - Call.py
+
 call_1 : "Bot requires **Admin** Permission to invite assistant account to your channel."
 call_2 : "Assistant is banned in your group or channel, please unban.\n\n**Assistant Username:** @{0}\n**Assistant ID:** {1}"
 call_3 : "Exception Occured While Inviting Assistant Account to your chat.\n\n**Reason**: {0}"
@@ -24,7 +25,8 @@ call_8 : "**Harmful Admin Right Given **\n\nPlease remove **ADD NEW ADMINS** rig
 call_9 : "**Failed to switch Stream**\nPlease use /skip to change track again."
 call_10 : "Downloading Next Track from Playlist"
 call_11 : "Please add @{0} to your channel[ ID: {1}].\n\nBot is not able to get channel details."
-# PLUGINS - Auth.py
+
+#
 auth_1 : ""
 auth_2 : ""
 auth_3 : ""
@@ -129,8 +131,8 @@ gstats_11 : ""
 # Play 
 
 #Play Callback 
-playcb_1 : "This is not for you! Search You Own Song."
-playcb_2 : "Getting Next Result"
+playcb_1 : "- لتبعبص بشي مالك علاقة بي ."
+playcb_2 : "- النتيجة ."
 
 # Channel Play
 cplay_1 : "You can play music in channels from this chat[{0}] to any channel or your chat's linked channel.\n\n**For linked channel:**\n`/{1} linked`\n\n**For any other channel:**\n`/{1} [Channel ID]`"
@@ -141,7 +143,7 @@ cplay_5 : "Only Channels are supported."
 cplay_6 : "You need to be the **Owner** of the channel[{0}] to connect it with this group.\n**Channel's Owner:** @{1}\n\nAlternatively you can link your group to that channel and then try connnecting with `/channelplay linked`"
 
 #Play
-play_1 : "‹ يتم الأن ›"
+play_1 : "‹ يتم التشغيل الأن ›"
 play_2 : "**🏷Channel Play Mode**\n\n🔄 Processing Query... Please Wait!\n**Linked Channel:** {0}"
 play_3 : "Failed to Process Query!"
 play_4 : "🖇 **Admins Only Play**\nOnly Admins and Auth Users can play music in this group.\n\nChange mode via /playmode and if you're already admin, reload admincache via /admincache"
