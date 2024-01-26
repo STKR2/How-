@@ -28,7 +28,7 @@ from YukkiMusic.utils.thumbnails import gen_thumb
 wrong = {}
 
 
-@app.on_callback_query(filters.regex("PanelMarkup") & ~BANNED_USERS)
+@app.on_callback_query(regex("PanelMarkup") & ~BANNED_USERS)
 @languageCB
 async def markup_panel(client, CallbackQuery: CallbackQuery, _):
     await CallbackQuery.answer()
@@ -71,7 +71,7 @@ async def del_back_playlist(client, CallbackQuery, _):
     wrong[chat_id][CallbackQuery.message.message_id] = True
 
 
-@app.on_callback_query(filters.regex("Pages") & ~BANNED_USERS)
+@app.on_callback_query(regex("Pages") & ~BANNED_USERS)
 @languageCB
 async def del_back_playlist(client, CallbackQuery, _):
     await CallbackQuery.answer()
@@ -106,7 +106,7 @@ downvote = {}
 downvoters = {}
 
 
-@app.on_callback_query(filters.regex("ADMIN") & ~BANNED_USERS)
+@app.on_callback_query(regex("ADMIN") & ~BANNED_USERS)
 @languageCB
 async def del_back_playlist(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
