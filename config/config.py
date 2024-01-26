@@ -27,6 +27,7 @@ SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
 )  # Remember to give value in Minutes
 
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 # You'll need a Private Group ID for this.
 
 # A name for your Music bot.
