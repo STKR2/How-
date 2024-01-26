@@ -16,7 +16,7 @@ PING_COMMAND : ["بنك"]
 START_COMMAND : ["start"]
 HELP_COMMAND : ["الاوامر"]
 SETTINGS_COMMAND : ["settings", "setting"]
-RELOAD_COMMAND : ["admincache", "reload"]
+RELOAD_COMMAND : ["تحديث", "حدث"]
 GSTATS_COMMAND : ["gstats"]
 STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
@@ -25,7 +25,7 @@ LANGUAGE_COMMAND : ["lang", "language", "langs"]
 PLAY_COMMAND : ["شغل", "فيد", "تشغيل", "فيديو", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
 PLAYMODE_COMMAND : ["playmode"]
 CHANNELPLAY_COMMAND : ["ربط"]
-STREAM_COMMAND : ["بث", "cstream", "streamforce"]
+STREAM_COMMAND : ["مباشر", "cstream", "streamforce"]
 
 #Playlists Command
 PLAYLIST_COMMAND : ["playlist"]
@@ -42,22 +42,22 @@ LYRICS_COMMAND : ["lyrics"]
 AUTH_COMMAND : ["auth"]
 UNAUTH_COMMAND : ["unauth"]
 AUTHUSERS_COMMAND : ["authusers"]
-PAUSE_COMMAND : ["pause", "cpause"]
-RESUME_COMMAND : ["resume", "cresume"]
-MUTE_COMMAND : ["mute", "cmute"]
-UNMUTE_COMMAND : ["unmute", "cunmute"]
+PAUSE_COMMAND : ["اوكف", "cpause"]
+RESUME_COMMAND : ["استمر", "cresume"]
+MUTE_COMMAND : ["كتم", "cmute"]
+UNMUTE_COMMAND : ["رفع", "cunmute"]
 STOP_COMMAND : ["كافي", "ايقاف", "cstop", "cend"]
-SKIP_COMMAND : ["skip", "cskip"]
+SKIP_COMMAND : ["سكب", "cskip"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
 LOOP_COMMAND : ["loop", "cloop"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
-RESTART_COMMAND : ["restart"]
+RESTART_COMMAND : ["ريستارت"]
 
 # Sudo Users Commaands
 
 # Sudo Command
 ADDSUDO_COMMAND : ["مطور"]
-DELSUDO_COMMAND : ["delsudo"]
+DELSUDO_COMMAND : ["حذف"]
 SUDOUSERS_COMMAND : ["المطورين"]
 
 #Broadcast 
@@ -86,8 +86,8 @@ VARS_COMMAND : ["vars", "config"]
 
 
 #Basic Bot Commands
-UPDATE_COMMAND : ["update"]
-REBOOT_COMMAND : ["reboot"]
+UPDATE_COMMAND : ["تحديث"]
+REBOOT_COMMAND : ["ريست"]
 AUTOEND_COMMAND : ["autoend"]
 
 #Private Bot Mode
@@ -104,8 +104,8 @@ BLOCKED_COMMAND : ["blockedusers"]
 SPEEDTEST_COMMAND : ["speedtest"]
 
 #Voice chat commands
-ACTIVEVC_COMMAND : ["activevoice"]
-ACTIVEVIDEO_COMMAND : ["activevideo"]
+ACTIVEVC_COMMAND : ["الصوتيات"]
+ACTIVEVIDEO_COMMAND : ["الفيديوات"]
 
 #Gban Commands
 GBAN_COMMAND : ["gban"]
