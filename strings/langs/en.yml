@@ -1,0 +1,471 @@
+name : 🏴󠁧󠁢󠁥󠁮󠁧󠁿 English
+
+# General Strings
+general_1 : ""
+general_2 : ""
+general_3 : "‹ تم تشغيل الملف الصوتي بنجاح ›"
+general_4 : "‹ انت مستخدم مجهول ›"
+general_5 : "‹ يلزم صلاحيات الدردشة الصوتية والحذف ، حتى تستطيع استخدام الأمر ›"
+general_6 : "‹ لايوجد شي في الاتصال ›"
+
+# Classes - Telegram.py
+tg_1 : ""
+tg_2 : ""
+
+# Core - Call.py
+call_1 : "Bot requires **Admin** Permission to invite assistant account to your channel."
+call_2 : "Assistant is banned in your group or channel, please unban.\n\n**Assistant Username:** @{0}\n**Assistant ID:** {1}"
+call_3 : "Exception Occured While Inviting Assistant Account to your chat.\n\n**Reason**: {0}"
+call_4 : "Bot requires **Invite Users Via Link** Permission to invite assistant account to your chat group."
+call_5 : "Assistant Account will be joining in 5 Seconds..Please Wait!"
+call_6 : "Assistant Account[{0}] Joined Successfully.\n\nStarting Music Now"
+call_7 : "**Harmful Admin Right Given **\n\nPlease remove **BAN USERS** rights from the bot."
+call_8 : "**Harmful Admin Right Given **\n\nPlease remove **ADD NEW ADMINS** rights from the bot."
+call_9 : "**Failed to switch Stream**\nPlease use /skip to change track again."
+call_10 : "Downloading Next Track from Playlist"
+call_11 : "Please add @{0} to your channel[ ID: {1}].\n\nBot is not able to get channel details."
+
+# PLUGINS - Auth.py
+auth_1 : ""
+auth_2 : ""
+auth_3 : ""
+auth_4 : ""
+auth_5 : ""
+auth_6 : ""
+auth_7 : ""
+auth_8 : ""
+
+# PLUGINS - Admins
+admin_1 : "‹ بالفعل تم الإيقاف مؤقتا ›"
+admin_2 : "‹ تم ايقاف الملف مؤقتا ›"
+admin_3 : "‹ تم تشغيل الملف بالفغل ›"
+admin_4 : "‹ تم تشغيل الملف الصوتي ›"
+admin_5 : "‹ بالفعل تم كتم الحساب ›"
+admin_6 : "‹ تم كتم الحساب ›"
+admin_7 : "‹ بالفعل تم إلغاء الكتم ›"
+admin_8 : "‹ تم إلغاء الكتم ›"
+admin_9 : "‹ تم الإيقاف ›"
+admin_10 : "‹ لايوجد شي في قائمة التشغيل ، تم عمل سكب تلقائيا ›"
+admin_11 : "Error while changing stream to **{0}**\n\nPlease use /skip again."
+admin_12 : "Unable to skip to a specific track because of enabled loop play. Please disable loop play via `/loop disable` to use this feature."
+admin_13 : "Please use numeric numbers for specific tracks, like 1, 2 or 4 etc"
+admin_14 : "Atleast 2 tracks needed in queue to skip to a specific number. Check queue by /queue"
+admin_15 : "Not enough tracks in queue for the value given by you. Please choose numbers between 1 and {0}"
+admin_16 : "Failed to skip to specific track.\n\nCheck left queue by /queue"
+admin_17 : "{0}.. Please Wait"
+admin_18 : "Admin List Not Found\n\nPlease reload adminlist via /admincache or /reload"
+admin_19 : "You need to be admin with manage voice chat rights to perform this.\nIf you're already admin, reload admincache via /admincache "
+admin_20 : "Admin cache reloaded successfully."
+admin_21 : "Nothing inside queue to shuffle"
+admin_22 : "Failed to shuffle.\n\nCheck queue : /queue"
+admin_23 : "**Queue Shuffled by {0}**\n\nCheck shuffled queue : /queue"
+admin_24 : "**Usage:**\n/loop [enable/disable] or [Number between 1-10]\n\n**Example:** /loop 5"
+admin_25 : "Loop enabled by {0} for **{1}** times. Bot will now repeat the current playing music on voice chat for **{1}** times"
+admin_26 : "Please use numbers between 1-10 for loop play"
+admin_27 : "Loop Play has been disabled"
+admin_28 : "**Usage:**\n/seek or /seekback [Duration in seconds]"
+admin_29 : "Please use numeric duration seconds like 10-20-30 second for seeking"
+admin_30 : "Sorry but you can't seek the currently playing stream. It can only be skipped or stopped."
+admin_31 : "Bot is not able to seek due to high duration given. You need to seek to a lower duration and remember that a time of 10 seconds is left after seeking.\n\nCurrently played** {0}** mins out of **{1}** mins"
+admin_32 : "Please Wait... Seeking ongoing stream."
+admin_33 : "Successfully Seeked Stream to {0} Mins"
+admin_34 : "Failed to seek the current stream."
+
+# Bot 
+
+# Start
+start_1 : "Thanks for having me in {0}.\n{1} is alive.\n\nFor any assistance or help, checkout our support group and channel."
+start_2 : "‹ بوت تشغيل الملفات في المحادثات والقنوات الصوتية ›\n\n‹ الازرار المتاحة في الأسفل ›"
+start_3 : "Welcome To {0}\n\nI don't need any **admin permission** to work ( until asked for ).\n\nAssistant Username:- @{1}\nAssistant ID:- {2}"
+start_4 : "{0}'s Owner[{1}] has just joined your chat."
+start_5 : "A member of {0}'s Sudo User[{1}] has just joined your chat."
+start_6 : "❗️ **Supergroup Needed** ❗️\n\nPlease convert your **group** to **supergroup** and then add me back.\n\n**How to make supergroup?**\n✅ Make your group's chat history **visible** once."
+start_7 : "**Blacklisted Chat**\n\nYou're chat has been blacklisted by the Bot. Please ask any SudoUser to whitelist chat first. Check [Sudolist from here]({0})"
+
+# Help
+help_1 : "‹ قائمة تحكم الأزرار  ›\n \n ‹ التحكم الأساسي ›"
+help_2 : "‹ اضغط للمساعدة ›"
+
+# Settings
+setting_1 : ""
+setting_3 : ""
+setting_4 : ""
+setting_5 : ""
+setting_9 : ""
+setting_10 : ""
+setting_11 : ""
+setting_12 : "❌ You've no channel id defined for channel mode. Please define with /channelplay."
+setting_13 : ""
+setting_14 : ""
+setting_15 : ""
+setting_16 : ""
+
+
+set_cb_1 : ""
+set_cb_2 : ""
+set_cb_3 : ""
+set_cb_4 : ""
+set_cb_5 : ""
+set_cb_6 : ""
+set_cb_7 : ""
+set_cb_8 : ""
+
+# Misc
+ustats_1 : ""
+ustats_2 : ""
+
+gstats_1 : ""
+gstats_2 : ""
+gstats_3 : ""
+gstats_4 : ""
+gstats_5 : ""
+gstats_6 : ""
+gstats_7 : ""
+gstats_8 : ""
+gstats_9 : ""
+gstats_10 : ""
+gstats_11 : ""
+
+
+# Play 
+
+#Play Callback 
+playcb_1 : "This is not for you! Search You Own Song."
+playcb_2 : "Getting Next Result"
+
+# Channel Play
+cplay_1 : "You can play music in channels from this chat[{0}] to any channel or your chat's linked channel.\n\n**For linked channel:**\n`/{1} linked`\n\n**For any other channel:**\n`/{1} [Channel ID]`"
+cplay_2 : "This chat has no linked channel."
+cplay_3 : "Channel Defined to {0}\n\n__Channel ID__: {1}"
+cplay_4 : "Failed to get channel.\n\nMake sure you have added bot in your channel and promoted it as admin.\nEdit or Change channel via /channelplay"
+cplay_5 : "Only Channels are supported."
+cplay_6 : "You need to be the **Owner** of the channel[{0}] to connect it with this group.\n**Channel's Owner:** @{1}\n\nAlternatively you can link your group to that channel and then try connnecting with `/channelplay linked`"
+
+#Play
+play_1 : "‹ يتم التشغيل ›"
+play_2 : "**🏷Channel Play Mode**\n\n🔄 Processing Query... Please Wait!\n**Linked Channel:** {0}"
+play_3 : "Failed to Process Query!"
+play_4 : "🖇 **Admins Only Play**\nOnly Admins and Auth Users can play music in this group.\n\nChange mode via /playmode and if you're already admin, reload admincache via /admincache"
+play_5 : "Failed to process audio file.\n\nAudio File Size Should Be Less Than 100 mb"
+play_6 : "**Duration Limit Exceeded**\n\n**Allowed Duration: **{0} minute(s)\n**Received Duration:** {1} hour(s)"
+play_7 : "Sorry! Bot only allows limited number of video calls due to CPU overload issues. Many other chats are using video call right now. Try switching to audio or try again later"
+play_8 : "Not A Valid Video File Extension!\n\n**Supported Formats:** {0}"
+play_9 : "Video File Size Should Be Less Than 1 GiB"
+play_10 : "**Youtube Playlist Feature**\n\nSelect the Mode in which you want to play whole Youtube Playlist"
+play_11 : "📎Title: **{0}\n\n⏳Duration:** {1} Mins"
+play_12 : "**Spotify Play Mode**\n\nRequested By:- {0}"
+play_13 : "**Apple Playlists**\n\nRequested By:- {0}"
+play_14 : "**Unable to verify the URL.**\nBot wonders if this url belongs to any of the following platforms: Youtube, AppleMusic, Spotify, Resso and Soundcloud.\n\nYou can use /stream for M3u8 or Remote Links."
+play_15 : "**Live Stream Detected**\n\nSystems have detected your track link as live stream. Want to play live stream ?"
+play_16 : "Failed to fetch track details. Try playing any other."
+play_17 : "Unable to play this type of spotify query!\n\nI can only play spotify tracks, albums, artists and playlists"
+play_18 : "**No Active Voice Chat Found**\n\nTo use force play, there must be an active voice chat going on in your group. **Force Play** stops the playing track on voice chat and starts playing the searched track instantly without disturbing/clearing queue."
+
+
+#Playlist
+playlist_1 : "‹ ارسل كلمة الاوامر لمعرفة كيفية تشغيل البوت›"
+playlist_2 : "Getting your playlist. Please wait"
+playlist_3 : "You have no playlist on Bot's Server."
+playlist_4 : "Fetched Playlist:\n\n"
+playlist_5 :  "    Duration- {0} Mins"
+playlist_6 : "Contact me in PM for deletion of Playlists."
+playlist_7 : "Tracks Inside Playlist: {0}\n\nPress the Buttons to delete a particular track in your playlist.\n\nTo delete whole playlist: Press Del Whole Playlist button."
+playlist_8 : "Already Exists\n\nThis track exists in your playlist."
+playlist_9 : "Sorry! You can only have {0} music in a playlist."
+playlist_10 : "Playlist Addition\n\n{0}\nadded to your playlist."
+playlist_11 : "Successfully deleted your track."
+playlist_12 : "Failed to delete your track."
+playlist_13 : "Deleted your whole playlists from the server. "
+playlist_14 : "**Are you Sure you want to delete your whole playlist?**\n\nYou'll lost your playlist and this can't be recovered later."
+playlist_15 : "[Checkout Whole Playlist]({0})"
+playlist_16 : "Queued Playlist:"
+playlist_17 : "Queued Position-"
+playlist_18 : "[Checkout Whole Queued Playlist]({0})\n\nLast Queued Position : **{1}**"
+
+#Playmode
+playmode_1 : "Select the mode in which you want to play the queries inside your group[{0}]."
+playmode_2 : "Settings changed and saved successfully by {0}"
+
+#Stream 
+str_1 : "Please Provide M3u8 Links or Index Links."
+str_2 : "✅ Valid Stream Verified\n\nPlease wait processing link.."
+str_3 : "Unable to stream youtube live streams. No Live Format Found"
+
+#TopPlay
+tracks_1 : "**Processing {0} Top 10 Playlist**\nThis could take some mins(around 3-4 mins).. Please Wait...\n\n**👤Requested By:** {1}\n\nCheck Top 10 tracks by /gstats"
+tracks_2 : "**Error**\n\nThere's no **{0} Top 10 Playlist** on bot's servers. Please try any other playlist"
+
+# TOOLS
+
+#Lyrics
+lyrics_1 : "**Usage:**\n\n/lyrics [ Music Name]"
+lyrics_2 : "Searching Lyrics"
+lyrics_3 : "❌ Failed to fetch lyrics😭.\n\n💡**Tried Searching For:** {0}"
+lyrics_4 : "Click on the button below and get searched lyrics to avoid long spam types lyrics search."
+
+#Ping
+ping_1 : "‹ البنك ›"
+ping_2 : "{0}` مللي ثانية ."
+
+
+# Song
+song_1 : ""
+song_2 : "‹ اكتب يوت وأسم الملف لتنزيلة ›"
+song_3 : ""
+song_4 : "‹ اختر جودة التنزيل ›"
+song_5 : "‹ الرابط غير صالح ›"
+song_6 : ""
+song_7 : ""
+song_8 : "‹ يتم الرفع ›"
+song_9 : ""
+song_10 : ""
+song_11 : ""
+
+# Tools - Queue
+queue_1 : ""
+queue_2 : ""
+queue_3 : ""
+queue_4 : "‹ تم اضافة الملف الى قائمة الإنتضار المرقمة {0} ›"
+queue_5 : ""
+
+# All Streaming Lines
+stream_1 : "‹ تم تشغيل الملف أونلاين  ›\n\n‹ الوقت :  {2} › \n\n‹ طلب الأخ : {3} ›"
+stream_2 : "📡 **Started Streaming via URL ** 💡\n\n👤**Requested By:** {0}"
+stream_3 : "📡 **Started Streaming** 💡\n\n**🏷Title:** {0}\n⌛️**Duration**: {1}\n👤**Requested By:** {2}"
+stream_4 : "📡 **Started Streaming** 💡\n\n**🏷Title:** [{0}]({1})\n⌛️**Duration**: {2}\n👤**Requested By:** {3}"
+
+# Inline Buttons
+
+#General Buttons
+CLOSE_BUTTON  : "‹ تنظيف ›"
+CLOSEMENU_BUTTON  : "‹ تنظيف ›"
+BACK_BUTTON : "‹ ارجع ›"
+UNBAN_BUTTON : "‹ رفع الحظر ›"
+
+#Lyrics
+L_B_1 : ""
+
+# Start
+S_B_1 : ""
+S_B_2 : ""
+S_B_3 : ""
+S_B_4 : "‹ القناة ›"
+S_B_5 : ""
+S_B_6 : ""
+S_B_7 : "‹ المنشئ ›"
+S_B_8 : "‹ الأوامر ›"
+
+#Help 
+H_B_1 : "‹ المدراء ›"
+H_B_2 : "‹ الأتصال ›"
+H_B_3 : ""
+H_B_4 : ""
+H_B_5 : "‹ امسح ›"
+H_B_6 : "‹ المنشئ ›"
+
+#PlayMode
+PM_B_1 : ""
+PM_B_2 : ""
+PM_B_3 : ""
+
+#Play
+P_B_1 : "‹ صوت فقط ›"
+P_B_2 : ""
+P_B_3 : "‹ بث مباشر ›"
+P_B_4 : ""
+
+#Playlist
+PL_B_1 : ""
+PL_B_2 : ""
+PL_B_3 : ""
+PL_B_4 : ""
+PL_B_5 : ""
+PL_B_6 : ""
+PL_B_7 : ""
+PL_B_8 : ""
+PL_B_9 : ""
+PL_B_10 : ""
+PL_B_11 : ""
+
+#Settings
+ST_B_1 : ""
+ST_B_2 : ""
+ST_B_3 : ""
+ST_B_4 : ""
+ST_B_5 : ""
+ST_B_6 : ""
+ST_B_7 : ""
+ST_B_8 : ""
+ST_B_9 : ""
+ST_B_10 : ""
+ST_B_11 : ""
+ST_B_12 : ""
+ST_B_13 : ""
+ST_B_14 : ""
+ST_B_15 : ""
+ST_B_16 : ""
+ST_B_17 : ""
+ST_B_18 : ""
+ST_B_19 : ""
+ST_B_20 : ""
+ST_B_21 : ""
+ST_B_22 : ""
+ST_B_23 : ""
+ST_B_24 : ""
+ST_B_25 : ""
+ST_B_26 : ""
+ST_B_27 : ""
+
+#Song
+SG_B_1 : "‹ التنزيل داخل البوت فقط ›"
+SG_B_2 : "‹ صوت ›"
+SG_B_3 : ""
+
+#Stats
+SA_B_1 : ""
+SA_B_2 : ""
+SA_B_3 : ""
+SA_B_4 : ""
+SA_B_5 : ""
+SA_B_6 : ""
+SA_B_7 : ""
+SA_B_8 : ""
+
+#Queue
+QU_B_1 : ""
+QU_B_2 : ""
+
+# Sudo Users [ If you are translating this to some other language .. you can leave all these strings in english language]
+
+#Sudo
+sudo_1 : "‹ تم رفعة مطور سابقآ ›"
+sudo_2 : "‹ تم إضافة الأخ {0} الى المطورين ›" 
+sudo_3 : "‹ لا يوجد مطورين في البوت ›"
+sudo_4 : "‹ تم إزالته من المطورين بنجاح ›"
+sudo_5 : "‹ المنشئ ›\n"
+sudo_6 : "‹ قائمة المطورين ›"
+sudo_7 : "‹ لا يوجد مطورين ›"
+
+#Block
+block_1 : ""
+block_2 : ""
+block_3 : ""
+block_5 : ""
+block_6 : ""
+block_7 : ""
+
+#Blacklist Chats
+black_1 : ""
+black_2 : ""
+black_3 : ""
+black_4 : ""
+black_5 : ""
+black_6 : ""
+black_7 : ""
+black_8 : ""
+
+#videolimit
+vid_1 : ""
+vid_2 : ""
+vid_3 : ""
+vid_4 : ""
+
+#maintenance
+maint_1 : ""
+maint_2 : ""
+maint_3 : ""
+
+#log
+log_1 : ""
+log_2 : ""
+log_3 : ""
+
+#videomode
+vidmode_1 : ""
+vidmode_2 : ""
+vidmode_3 : ""
+
+#broadcast
+broad_1 : ""
+broad_2 : ""
+broad_3 : ""
+broad_4 : ""
+broad_5 : ""
+broad_6 : ""
+broad_7 : ""
+
+#Heroku
+heroku_1 : ""
+heroku_2 : ""
+heroku_3 : ""
+heroku_4 : ""
+heroku_5 : ""
+heroku_6 : ""
+heroku_7 : ""
+heroku_8 : ""
+heroku_9 : ""
+heroku_10 : ""
+heroku_11 : ""
+heroku_12 : ""
+heroku_13 : ""
+heroku_14 : ""
+heroku_15 : ""
+
+#Private bot mode
+pbot_1 : ""
+pbot_2 : ""
+pbot_3 : ""
+pbot_4 : ""
+pbot_5 : ""
+pbot_6 : ""
+pbot_7 : ""
+pbot_8 : ""
+pbot_9 : ""
+pbot_10 : ""
+pbot_11 : ""
+pbot_12 : ""
+pbot_13 : ""
+
+
+#Gbanned
+gban_1 : ""
+gban_2 : ""
+gban_3 : ""
+gban_4 : ""
+gban_5 : ""
+gban_6 : ""
+gban_7 : ""
+gban_8 : ""
+gban_9 : ""
+gban_10 : ""
+gban_11 : ""
+
+#Suggestions
+sug_0 : ""
+sug_1 : ""
+sug_2 : ""
+sug_3 : ""
+sug_4 : ""
+sug_5 : ""
+sug_6 : ""
+sug_7 : ""
+sug_8 : ""
+sug_9 : ""
+sug_10 : ""
+sug_11 : ""
+sug_12 : ""
+sug_13 : ""
+sug_14 : ""
+sug_15 : ""
+sug_16 : ""
+sug_17 : ""
+sug_18 : ""
+sug_19 : ""
+sug_20 : ""
+sug_21 : ""
+sug_22 : ""
+sug_23 : ""
+sug_24 : ""
+sug_25 : ""
+sug_26 : ""
+sug_27 : ""
