@@ -24,7 +24,7 @@ ydl_opts = {
 
 
 
-@app.on_message(command(["بحث","يوت","تحميل صوت","yt"]) & ~filters.edited)
+@app.on_message(command(["بحث","يوت","تحميل صوت","yt"]) & ~filters.private & ~BANNED_USERS)
 def song(_, message):
     query = " ".join(message.command[1:])
     m = message.reply("- **ابشر جاري البحث ..**")
@@ -82,7 +82,7 @@ def song232(_, message):
   else:
     g = text.split(" ")
     query = str(g[0])
-    m = message.reply("🔎")
+    m = message.reply("- يتم البحث الان .")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
