@@ -22,11 +22,10 @@ STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["شغل", "فيديو", "ق", "ف", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["play", "vplay", "cplay", "/cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce", "تشغيل" , "فيديو", "#تشغيل", "/play", "/vplay", "cplay", "cvplay", "/تشغيل", "/ق تشغيل", "/ق شغل", "/فيديو", "تشغيل/", "{NAME_BOT}", "فيديو", "#فديو", "فديو","سورة","سوره"]
 PLAYMODE_COMMAND : ["playmode"]
 CHANNELPLAY_COMMAND : ["ربط"]
-STREAM_COMMAND : ["لايف", "لايف", "streamforce"]
-
+STREAM_COMMAND : ["stream", "cstream", "streamforce", "لايف", "ق لايف"]
 #Playlists Command
 PLAYLIST_COMMAND : ["playlist"]
 DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
@@ -86,7 +85,7 @@ VARS_COMMAND : ["vars", "config"]
 
 
 #Basic Bot Commands
-UPDATE_COMMAND : ["تحديث السورس"]
+UPDATE_COMMAND : ["التحديث"]
 REBOOT_COMMAND : ["ريست"]
 AUTOEND_COMMAND : ["autoend"]
 
