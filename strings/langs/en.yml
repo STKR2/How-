@@ -238,9 +238,9 @@ stream_4 : "‹ تم تشغيل الملف الصوتي ›\n\n‹ نوع الت
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "‹ تنظيف ›"
+CLOSE_BUTTON  : ""
 CLOSEMENU_BUTTON  : "‹ تنظيف ›"
-BACK_BUTTON : ""
+BACK_BUTTON : "‹ ارجع ›"
 UNBAN_BUTTON : "‹ رفع الحظر ›"
 
 #Lyrics
