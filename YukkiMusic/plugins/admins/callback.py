@@ -1,7 +1,6 @@
 import random
 
 from pyrogram import filters
-from strings.filters import command
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
 
 from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
