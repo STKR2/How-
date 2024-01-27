@@ -13,7 +13,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 async def maker(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://graph.org/file/ca112cdaee8107668dd9d.jpg",
-        caption=f"""| مطور السورس \n| مطور البوت""",
+        caption=f"""-| مطور السورس \n-| قناة المطور""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -22,7 +22,7 @@ async def maker(client: Client, message: Message):
                 ],
                 [
                    InlineKeyboardButton(
-                        "- مطور البوت ", url=f"https://t.me/xl444"),
+                        "- قناة المطور ", url=f"https://t.me/xl444"),
                 ],       
             ]
         ),
