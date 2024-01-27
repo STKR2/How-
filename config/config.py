@@ -126,7 +126,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 # If you want your bot to setup the commands automatically in the bot's menu set it to true.
 # Refer to https://i.postimg.cc/Bbg3LQTG/image.png
-SET_CMDS = getenv("SET_CMDS", true)
+SET_CMDS = getenv("SET_CMDS", "true"
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 STRING1 = getenv("STRING_SESSION", "AgDAbDw942Het3ZaYMyPWD0jDiZNdGAo3mEtbJI2zAyacaXGdH4ybeZopuj4nJuKv0ECRu6HPrHgesKyAfUyQTK6Na0PkFPz_6PJMrdHBvgnkdd4o_iI4jbAWJ8MJcerrCDJZvIl6oKWFOL5WVx-6ioe_yYSA9pzSGNVWizTd12BfMCGrrySvEF4QddxRD-t9iU_YaQt8d0w1DWJTub99ZY7hMcUBxqP3Vmaknrm-Wu3NgvF0r-7lIz0M_0_bsvFWDarcicYSgXawnNqzQs9-JQ6qIsZ4UyCinP2hO0hYrVsDoPX8n40wlvuAHU-anJGXcQqwcSZ4L87AKgIwv_160oAAAAAAZ3dIT0A")
