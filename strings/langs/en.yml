@@ -273,10 +273,8 @@ PM_B_1 : "DirectPlay"
 PM_B_2 : "InlineMarkup"
 PM_B_3 : "ChannelPlay
 
-# # # $
-
-#Settings
-ST_B_1 : "🔊 Aud Quality"
+# # # 
+- ST_B_1 : "🔊 Aud Quality"
 ST_B_2 : "🎥 Vid Quality"
 ST_B_3 : "🎩 Auth Users"
 ST_B_4 : "📱 Dashboard"
