@@ -7,12 +7,12 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 
 
 @app.on_message(
-    command(["سورس","السورس","المصنع"])
+    command(["سورس","السورس","المبرمج"])
     & filters.group
 )
 async def maker(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://graph.org/file/ca112cdaee8107668dd9d.jpg",
+        photo=f"https://graph.org/file/94fa4bb62424ea712eaa2.jpg",
         caption=f"""-| مطور السورس \n-| قناة المطور""",
         reply_markup=InlineKeyboardMarkup(
             [
