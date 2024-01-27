@@ -274,9 +274,6 @@ PM_B_2 : "InlineMarkup"
 PM_B_3 : "ChannelPlay
 
 #Playlist
-PL_B_1 : ""
-PL_B_2 : ""
-PL_B_3 : ""
 PL_B_4 : "📡 Play Mode"
 PL_B_5 : "🔄 Del Whole Playlist"
 PL_B_6 : "↗️ Delete Playlist"
