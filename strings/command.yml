@@ -22,10 +22,10 @@ STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["شغل", "فيديو", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["شغل", "فيديو", "ق", "ف", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
 PLAYMODE_COMMAND : ["playmode"]
 CHANNELPLAY_COMMAND : ["ربط"]
-STREAM_COMMAND : ["مباشر", "cstream", "streamforce"]
+STREAM_COMMAND : ["لايف", "لايف", "streamforce"]
 
 #Playlists Command
 PLAYLIST_COMMAND : ["playlist"]
