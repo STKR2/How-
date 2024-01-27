@@ -224,7 +224,7 @@ Total Left: `{hours}`**h**  `{minutes}`**m**  [`{percentage}`**%**]"""
     return await dyno.edit(text)
 
 
-@app.on_message(filters.command(UPDATE_COMMAND) & SUDOERS)
+@app.on_message(command(UPDATE_COMMAND) & SUDOERS)
 @language
 async def update_(client, message, _):
     if await is_heroku():
@@ -324,7 +324,7 @@ async def update_(client, message, _):
         exit()
 
 
-@app.on_message(filters.command(REBOOT_COMMAND) & SUDOERS)
+@app.on_message(command(REBOOT_COMMAND) & SUDOERS)
 async def restart_(_, message):
     response = await message.reply_text("Restarting....")
     served_chats = await get_active_chats()
