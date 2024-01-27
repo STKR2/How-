@@ -28,6 +28,7 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
+from strings.filters import command
 from YukkiMusic import LOGGER, YouTube, app
 from YukkiMusic.misc import db
 from YukkiMusic.utils.database import (add_active_chat,
