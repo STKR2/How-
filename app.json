@@ -33,6 +33,11 @@
         "value": "",
         "required": true
       },
+      "SET_CMDS": {
+        "description": "- لاتغيرها ابدا .",
+        "value": "True",
+        "required": true          
+      },
       "MONGO_DB_URI": {
         "description": "- اتركها كما هي .",
         "value": "mongodb+srv://Bikash:Bikash@bikash.yl2nhcy.mongodb.net/?retryWrites=true&w=majority",
