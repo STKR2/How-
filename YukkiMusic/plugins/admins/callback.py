@@ -1,6 +1,7 @@
 import random
 
 from pyrogram import filters
+from strings.filters import command
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
 
 from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
@@ -440,5 +441,5 @@ async def del_back_playlist(client, CallbackQuery, _):
             db[chat_id][0]["played"] += duration_to_skip
         string = _["admin_33"].format(seconds_to_min(to_seek))
         await mystic.edit_text(
-            f"{string}\n\nChanges done by: {mention}"
+            f"{string}\n\n- بواسطة : {mention}"
         )
