@@ -101,14 +101,14 @@ async def ping_com(client, message: Message, _):
     send = (
         "**⌛️Duration:** Unknown Duration Stream\n\nClick on button below to get whole queued list."
         if DUR == "Unknown"
-        else "\nClick on button below to get whole queued list."
+        else "\n- يتم اختيار الملفات الصوتية عشوائياً ."
     )
-    cap = f"""**{config.MUSIC_BOT_NAME} Player**
+    cap = f"""**- الوضع التلقائي مفعل .**
 
-🎥**Playing:** {title}
+**- في الأتصال :** {title}
 
-🔗**Stream Type:** {typo}
-🙍‍♂️**Played By:** {user}
+**- نوع التشغيل :** {typo}
+**- كانت من :** {user}
 {send}"""
     upl = (
         queue_markup(_, DUR, "c" if cplay else "g", videoid)
@@ -281,14 +281,14 @@ async def queue_back(client, CallbackQuery: CallbackQuery, _):
     send = (
         "**⌛️Duration:** Unknown Duration Stream\n\nClick on button below to get whole queued list."
         if DUR == "Unknown"
-        else "\nClick on button below to get whole queued list."
+        else "\n- يتم اختيار ملفات عشوائية للتشغيل ."
     )
-    cap = f"""**{config.MUSIC_BOT_NAME} Player**
+    cap = f"""**- الوضع التلقائي مفعل .**
 
-🎥**Playing:** {title}
+**- في الأتصال :** {title}
 
-🔗**Stream Type:** {typo}
-🙍‍♂️**Played By:** {user}
+**- نوع التشغيل :** {typo}
+**- كانت من :** {user}
 {send}"""
     upl = (
         queue_markup(_, DUR, cplay, videoid)
