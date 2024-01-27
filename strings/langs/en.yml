@@ -272,14 +272,6 @@ PM_B_2 : "InlineMarkup"
 PM_B_3 : "ChannelPlay
 
 
-
-
-#Queue
-QU_B_1 : "📑 Queued List"
-QU_B_2 : "Played {0} out of {1} Mins"
-
-# Sudo Users [ If you are translating this to some other language .. you can leave all these strings in english language]
-
 #Sudo
 sudo_1 : "‹ تم رفعة مطور سابقآ ›"
 sudo_2 : "‹ تم إضافة الأخ {0} الى المطورين ›" 
@@ -475,3 +467,18 @@ Sg_b_1 : "↗️ Open Private Chat"
 Sg_b_2 : "🔊 Audio"
 Sg_b_3 : "🎥 Video"
 
+
+#Stats
+SA_B_1 : "📢 Top 10 Chat"
+SA_B_2 : "🔢 Top 10 Tracks"
+SA_B_3 : "🧛 Top 10 Users"
+SA_B_4 : "🏷 Top 10 Here"
+SA_B_5 : "💡 Overall Stats"
+SA_B_6 : "👤 User Stats"
+SA_B_7 : "🔢 Global Top 10 Stats"
+SA_B_8 : "🤖 Bot Stats"
+
+
+#Queue
+QU_B_1 : "📑 Queued List"
+QU_B_2 : "Played {0} out of {1} Mins"
