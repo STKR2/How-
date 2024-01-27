@@ -233,7 +233,7 @@ def panel_markup_1(_, videoid, chat_id):
                 callback_data=f"Pages Back|0|{videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="‹ ارجع ›",
+                text="",
                 callback_data=f"MainMarkup {videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
