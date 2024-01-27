@@ -72,8 +72,6 @@ admin_32 : "Please Wait... Seeking ongoing stream."
 admin_33 : "Successfully Seeked Stream to {0} Mins"
 admin_34 : "Failed to seek the current stream."
 
-# Bot 
-
 # Start
 start_1 : "Thanks for having me in {0}.\n{1} is alive.\n\nFor any assistance or help, checkout our support group and channel."
 start_2 : "‹ بوت تشغيل الملفات في المحادثات والقنوات الصوتية ›\n\n‹ الازرار المتاحة في الأسفل ›"
@@ -276,9 +274,9 @@ PM_B_3 : "ChannelPlay
 
 
 #Song
-SG_B_1 : "↗️ Open Private Chat"
-SG_B_2 : "🔊 Audio"
-SG_B_3 : "🎥 Video"
+Sg_b_1 : "↗️ Open Private Chat"
+Sg_b_2 : "🔊 Audio"
+Sg_b_3 : "🎥 Video"
 
 #Stats
 SA_B_1 : "📢 Top 10 Chat"
