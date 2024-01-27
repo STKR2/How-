@@ -273,11 +273,6 @@ PM_B_3 : "ChannelPlay
 
 
 
-#Song
-Sg_b_1 : "↗️ Open Private Chat"
-Sg_b_2 : "🔊 Audio"
-Sg_b_3 : "🎥 Video"
-
 #Stats
 SA_B_1 : "📢 Top 10 Chat"
 SA_B_2 : "🔢 Top 10 Tracks"
@@ -483,3 +478,9 @@ ST_B_24 : "🏷 Channel"
 ST_B_25 : "🫂 Play Type"
 ST_B_26 : "🗑 Command Clean"
 ST_B_27 : "🧑‍🚀 Suggestion Mode"
+
+#Song
+Sg_b_1 : "↗️ Open Private Chat"
+Sg_b_2 : "🔊 Audio"
+Sg_b_3 : "🎥 Video"
+
