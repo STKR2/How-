@@ -86,7 +86,7 @@ VARS_COMMAND : ["vars", "config"]
 
 
 #Basic Bot Commands
-UPDATE_COMMAND : ["تحديث"]
+UPDATE_COMMAND : ["تحديث السورس"]
 REBOOT_COMMAND : ["ريست"]
 AUTOEND_COMMAND : ["autoend"]
 
