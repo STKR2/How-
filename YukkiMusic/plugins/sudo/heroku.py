@@ -26,6 +26,7 @@ from pyrogram import filters
 import config
 from strings import get_command
 from YukkiMusic import app
+from strings.filters import command
 from YukkiMusic.misc import HAPP, SUDOERS, XCB
 from YukkiMusic.utils.database import (get_active_chats,
                                        remove_active_chat,
@@ -49,7 +50,7 @@ async def is_heroku():
     return "heroku" in socket.getfqdn()
 
 
-@app.on_message(filters.command(GETLOG_COMMAND) & SUDOERS)
+@app.on_message(command(GETLOG_COMMAND) & SUDOERS)
 @language
 async def log_(client, message, _):
     try:
@@ -79,7 +80,7 @@ async def log_(client, message, _):
         await message.reply_text(_["heroku_2"])
 
 
-@app.on_message(filters.command(GETVAR_COMMAND) & SUDOERS)
+@app.on_message(command(GETVAR_COMMAND) & SUDOERS)
 @language
 async def varget_(client, message, _):
     usage = _["heroku_3"]
@@ -109,7 +110,7 @@ async def varget_(client, message, _):
             )
 
 
-@app.on_message(filters.command(DELVAR_COMMAND) & SUDOERS)
+@app.on_message(command(DELVAR_COMMAND) & SUDOERS)
 @language
 async def vardel_(client, message, _):
     usage = _["heroku_6"]
@@ -137,7 +138,7 @@ async def vardel_(client, message, _):
             os.system(f"kill -9 {os.getpid()} && bash start")
 
 
-@app.on_message(filters.command(SETVAR_COMMAND) & SUDOERS)
+@app.on_message(command(SETVAR_COMMAND) & SUDOERS)
 @language
 async def set_var(client, message, _):
     usage = _["heroku_8"]
@@ -166,7 +167,7 @@ async def set_var(client, message, _):
         os.system(f"kill -9 {os.getpid()} && bash start")
 
 
-@app.on_message(filters.command(USAGE_COMMAND) & SUDOERS)
+@app.on_message(command(USAGE_COMMAND) & SUDOERS)
 @language
 async def usage_dynos(client, message, _):
     ### Credits CatUserbot
