@@ -3,8 +3,9 @@ import asyncio
 import yt_dlp
 import requests
 
-from ... import app
+from YukkiMusic import app
 from strings.filters import command
+from pyrogram import Client, filters
 from pyrogram import filters
 from pyrogram.types import Message
 from youtubesearchpython import VideosSearch
