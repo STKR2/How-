@@ -50,7 +50,7 @@ async def song(client: app, message: Message):
         await aux.edit(f"**Error:** {e}")
         
 
-@app.on_message(command(["انضم", f"ب"]) & ~ filters.group)
+@app.on_message(command(["انضم", f"ب"]))
 async def join(xspam: Client, message: Message):
     alt = message.text.split(" ")
     if len(alt) == 1:
