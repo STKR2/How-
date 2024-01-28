@@ -10,7 +10,7 @@ from pyrogram.types import Message
 from youtubesearchpython import VideosSearch
 
 
-@app.on_message(command(["بحث", f"يوت"])
+@app.on_message(command(["بحث", f"يوت"]) & filters.group
 async def song(client: app, message: Message):
     aux = await message.reply_text("‹ جاري البحث  ›")
     if len(message.command) < 2:
@@ -49,7 +49,7 @@ async def song(client: app, message: Message):
         await aux.edit(f"**Error:** {e}")
         
 
-@app.on_message(command(["انضم", f"ب"])
+@app.on_message(command(["انضم", f"ب"]) & filters.group
 async def join(xspam: Client, message: Message):
     alt = message.text.split(" ")
     if len(alt) == 1:
