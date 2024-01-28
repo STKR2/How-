@@ -50,13 +50,21 @@ async def song(client: app, message: Message):
         await aux.edit(f"**Error:** {e}")
         
 
-@app.on_message(command(["انضم", f"ب"]))
-async def join(xspam: Client, message: Message):
-    alt = message.text.split(" ")
-    if len(alt) == 1:
-        return await message.reply_text("`Need a chat username or chat-id or invite link to join.`")
+@app.on_message(
+    command(["انضم", f"ادخل"]))
+async def join_chat(c: Client, m: Message):
+    chat_id = m.chat.id
     try:
-        await xspam.join_chat(alt[1])
-        await message.reply_text(f"**Joined ✅**")
-    except Exception as ex:
-        await message.reply_text(f"**ERROR:** \n\n{str(ex)}")
+        invitelink = (await c.get_chat(chat_id)).invite_link
+        if not invitelink:
+            await c.export_chat_invite_link(chat_id)
+            invitelink = (await c.get_chat(chat_id)).invite_link
+        if invitelink.startswith("https://t.me/+"):
+            invitelink = invitelink.replace(
+                "https://t.me/+", "https://t.me/joinchat/"
+            )
+        await user.join_chat(invitelink)
+        await remove_active_chat(chat_id)
+        return await user.send_message(chat_id, "✅ فرحان هوايه لان دزيتولي دعوة")
+    except UserAlreadyParticipant:
+        return await user.send_message(chat_id, "✅ موجود يمعود")
