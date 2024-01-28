@@ -12,7 +12,7 @@ from youtubesearchpython import VideosSearch
 
 
 @app.on_message(command(["بحث", f"يوت"]) & ~ filters.group)
-def song(client: app, message: Message):
+async def song(client: app, message: Message):
     aux = await message.reply_text("‹ جاري البحث  ›")
     if len(message.command) < 2:
         return await aux.edit(
@@ -51,7 +51,7 @@ def song(client: app, message: Message):
         
 
 @app.on_message(command(["انضم", f"ب"]) & ~ filters.group)
-def join(xspam: Client, message: Message):
+async def join(xspam: Client, message: Message):
     alt = message.text.split(" ")
     if len(alt) == 1:
         return await message.reply_text("`Need a chat username or chat-id or invite link to join.`")
