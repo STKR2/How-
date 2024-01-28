@@ -66,5 +66,4 @@ async def join_chat(c: Client, m: Message):
         await user.join_chat(invitelink)
         await remove_active_chat(chat_id)
         return await user.send_message(chat_id, "✅ فرحان هوايه لان دزيتولي دعوة")
-    except UserAlreadyParticipant:
-        return await user.send_message(chat_id, "✅ موجود يمعود")
+    
