@@ -47,8 +47,9 @@ async def song(client: app, message: Message):
         await aux.delete()
     except Exception as e:
         await aux.edit(f"**Error:** {e}")
+        
 
-@app.on_message(filters.command(["انضم"], ["/", "!", "."])
+@app.on_message(command(["انضم"], ["/", "!", "."])
 async def join(xspam: Client, message: Message):
     alt = message.text.split(" ")
     if len(alt) == 1:
