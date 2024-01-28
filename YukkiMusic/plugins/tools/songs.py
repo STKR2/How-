@@ -3,7 +3,7 @@ import asyncio
 import yt_dlp
 import requests
 
-from YukkiMusic import app
+from ... import app
 from strings.filters import command
 from pyrogram import Client, filters
 from pyrogram import filters
@@ -11,7 +11,7 @@ from pyrogram.types import Message
 from youtubesearchpython import VideosSearch
 
 
-@app.on_message(command(["بحث", f"يوت"]) & ~ filters.group)
+@app.on_message(command(["بحث", f"يوت"]))
 async def song(client: app, message: Message):
     aux = await message.reply_text("‹ جاري البحث  ›")
     if len(message.command) < 2:
