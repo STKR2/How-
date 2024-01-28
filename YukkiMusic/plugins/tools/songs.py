@@ -4,17 +4,18 @@ import yt_dlp
 import requests
 
 from ... import app
+from strings.filters import command
 from pyrogram import filters
 from pyrogram.types import Message
 from youtubesearchpython import VideosSearch
 
 
-@app.on_message(filters.command(["song"], ["/", "!", "."]))
+@app.on_message(command(["يوت"], ["تحميل", "بحث", "تنزيل"]))
 async def song(client: app, message: Message):
-    aux = await message.reply_text("**🔄 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 ...**")
+    aux = await message.reply_text("‹ جاري البحث  ›")
     if len(message.command) < 2:
         return await aux.edit(
-            "**🤖 𝐆𝐢𝐯𝐞 🙃 𝐌𝐮𝐬𝐢𝐜 💿 𝐍𝐚𝐦𝐞 😍\n💞 𝐓𝐨 🔊 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 🥀 𝐒𝐨𝐧𝐠❗**"
+            "‹ ارسل يوت واسم الملف الصوتي  ›"
         )
     try:
         song_name = message.text.split(None, 1)[1]
@@ -34,10 +35,10 @@ async def song(client: app, message: Message):
             ],
             "outtmpl": f"downloads/{song_title}",
         }
-        await aux.edit("**𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ...**")
+        await aux.edit("‹ يتم الرفع  ›")
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             ydl.download(song_link)
-        await aux.edit("**𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ...**")
+        await aux.edit("‹ تم التحميل  ›")
         await message.reply_audio(f"downloads/{song_title}.mp3")
         try:
             os.remove(f"downloads/{song_title}.mp3")
