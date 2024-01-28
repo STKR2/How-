@@ -10,7 +10,7 @@ from pyrogram.types import Message
 from youtubesearchpython import VideosSearch
 
 
-@app.on_message(command(["بحث","يوت","تحميل صوت","yt"]) & filters.group
+@app.on_message(command(["يوت"]) & filters.group
 async def song(client: app, message: Message):
     aux = await message.reply_text("‹ جاري البحث  ›")
     if len(message.command) < 2:
