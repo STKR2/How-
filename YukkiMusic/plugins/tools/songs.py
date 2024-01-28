@@ -52,7 +52,7 @@ async def song(client: app, message: Message):
 
 @app.on_message(command(["yt", "حمل"]))
 async def ytmusic(client, message: Message):
-    urlissed = get_text(message)
+    urlissed = text(message)
     await message.delete()
     user_id = message.from_user.id
     user_name = message.from_user.first_name
