@@ -37,7 +37,7 @@ async def maker(client: Client, message: Message):
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
     url = f"https://t.me/alaaa/{rl}"
-    await client.send_photo(message.chat.id,url,caption="🫧",parse_mode="html",
+    await client.send_photo(message.chat.id,url,
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -46,4 +46,4 @@ async def ihd(client: Client, message: Message):
                 ],
             ]
         )
-    )
+                           )
