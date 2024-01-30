@@ -194,13 +194,13 @@ async def usage_dynos(client, message, _):
     if r.status_code != 200:
         return await dyno.edit("Unable to fetch.")
     result = r.json()
-    quota = result["account_quota"]
+      quota = result["account_quota"]
     quota_used = result["quota_used"]
     remaining_quota = quota - quota_used
-    percentage = math.floor(remaining_quota / quota * 1500)
-    minutes_remaining = remaining_quota / 1500
-    hours = math.floor(minutes_remaining / 1500)
-    minutes = math.floor(minutes_remaining % 1500)
+    percentage = math.floor(remaining_quota / quota * 100)
+    minutes_remaining = remaining_quota / 60
+    hours = math.floor(minutes_remaining / 60)
+    minutes = math.floor(minutes_remaining % 60)
     App = result["apps"]
     try:
         App[0]["quota_used"]
@@ -209,9 +209,9 @@ async def usage_dynos(client, message, _):
         AppPercentage = 0
     else:
         AppQuotaUsed = App[0]["quota_used"] / 60
-        AppPercentage = math.floor(App[0]["quota_used"] * 1500 / quota)
-    AppHours = math.floor(AppQuotaUsed / 1500)
-    AppMinutes = math.floor(AppQuotaUsed % 1500)
+        AppPercentage = math.floor(App[0]["quota_used"] * 100 / quota)
+    AppHours = math.floor(AppQuotaUsed / 60)
+    AppMinutes = math.floor(AppQuotaUsed % 60)
     await asyncio.sleep(1.5)
     text = f"""
 **DYNO USAGE**
