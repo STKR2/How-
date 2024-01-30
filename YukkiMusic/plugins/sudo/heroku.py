@@ -198,9 +198,9 @@ async def usage_dynos(client, message, _):
     quota_used = result["quota_used"]
     remaining_quota = quota - quota_used
     percentage = math.floor(remaining_quota / quota * 100)
-    minutes_remaining = remaining_quota / 60
-    hours = math.floor(minutes_remaining / 60)
-    minutes = math.floor(minutes_remaining % 60)
+    minutes_remaining = remaining_quota / 600
+    hours = math.floor(minutes_remaining / 600)
+    minutes = math.floor(minutes_remaining % 600)
     App = result["apps"]
     try:
         App[0]["quota_used"]
