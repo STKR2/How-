@@ -194,7 +194,7 @@ async def usage_dynos(client, message, _):
     if r.status_code != 200:
         return await dyno.edit("Unable to fetch.")
     result = r.json()
-      quota = result["account_quota"]
+    quota = result["account_quota"]
     quota_used = result["quota_used"]
     remaining_quota = quota - quota_used
     percentage = math.floor(remaining_quota / quota * 100)
